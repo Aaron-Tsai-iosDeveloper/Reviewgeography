@@ -1,24 +1,263 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rrf-Vd-9dN">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--             -->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="地理大冒險" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fco-ah-C8K">
+                                <rect key="frame" x="161" y="378" width="71" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="崁">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="button_Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nYF-rS-Cuy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26S-NR-Al1">
+                                <rect key="frame" x="161" y="504" width="71" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="埔"/>
+                                <connections>
+                                    <action selector="button_Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MuO-by-AgB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目前分數 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bu-WX-1Hk">
+                                <rect key="frame" x="123.33333333333333" y="701" width="146.66666666666669" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下列哪一字代表 意思為山崖？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cfv-9D-7xo">
+                                <rect key="frame" x="90.333333333333329" y="245.33333333333334" width="212.33333333333337" height="71.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MW6-Tv-dgZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9bu-WX-1Hk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9CD-QD-Eje"/>
+                            <constraint firstItem="Fco-ah-C8K" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="F2L-zm-mss"/>
+                            <constraint firstItem="26S-NR-Al1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PT6-jr-YZf"/>
+                            <constraint firstItem="9bu-WX-1Hk" firstAttribute="top" secondItem="Fco-ah-C8K" secondAttribute="bottom" constant="227" id="afI-Yh-1X3"/>
+                            <constraint firstItem="Fco-ah-C8K" firstAttribute="top" secondItem="Cfv-9D-7xo" secondAttribute="bottom" constant="61" id="eWV-Zl-oyZ"/>
+                            <constraint firstItem="Fco-ah-C8K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="glv-az-szQ"/>
+                            <constraint firstItem="26S-NR-Al1" firstAttribute="top" secondItem="Fco-ah-C8K" secondAttribute="bottom" constant="30" id="pjg-P0-n1u"/>
+                            <constraint firstItem="Cfv-9D-7xo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xBt-0Z-iQk"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="             " largeTitleDisplayMode="never" style="editor" customizationIdentifier="" id="0w4-2B-tmq">
+                        <barButtonItem key="backBarButtonItem" title="           " id="lLj-oZ-tVR"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="button1" destination="Fco-ah-C8K" id="D1I-Hr-Jhf"/>
+                        <outlet property="button2" destination="26S-NR-Al1" id="41t-8x-R4r"/>
+                        <outlet property="question" destination="Cfv-9D-7xo" id="p7E-CJ-ICy"/>
+                        <outlet property="scoreLabel" destination="9bu-WX-1Hk" id="Qh7-Zo-qau"/>
+                        <outletCollection property="button1" destination="Fco-ah-C8K" collectionClass="NSMutableArray" id="PKk-xN-POw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="4457.2519083969464" y="-35.211267605633807"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bqV-7F-25M">
+            <objects>
+                <viewController id="UBd-Kq-A7c" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Nz-tg-Uhg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  遊戲規則說明   " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fol-2i-ytR">
+                                <rect key="frame" x="9" y="262.66666666666669" width="375.33333333333331" height="63.333333333333314"/>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="53"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 答對＋10分" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxT-y9-bAe">
+                                <rect key="frame" x="38" y="390.33333333333331" width="317.33333333333331" height="71.666666666666686"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 答錯不扣分 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IsR-r5-T8I">
+                                <rect key="frame" x="33.333333333333343" y="492.00000000000006" width="326.66666666666663" height="71.666666666666686"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mjB-te-o6l">
+                                <rect key="frame" x="60.666666666666657" y="648" width="272" height="107.33333333333337"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="點擊開始">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="68" name="PingFangTC-Regular"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ngV-9A-N5K"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 點擊左上方藍色箭頭    可以重新開始新遊戲  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ll-Ok-Nz1">
+                                <rect key="frame" x="15" y="118" width="198" height="48"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9lz-Tf-PGZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RxT-y9-bAe" firstAttribute="centerY" secondItem="7Nz-tg-Uhg" secondAttribute="centerY" id="4Fx-zV-O6L"/>
+                            <constraint firstItem="IsR-r5-T8I" firstAttribute="centerX" secondItem="7Nz-tg-Uhg" secondAttribute="centerX" id="AqT-3G-HAv"/>
+                            <constraint firstItem="4ll-Ok-Nz1" firstAttribute="leading" secondItem="9lz-Tf-PGZ" secondAttribute="leading" constant="15" id="GRN-BP-G4z"/>
+                            <constraint firstItem="RxT-y9-bAe" firstAttribute="centerX" secondItem="7Nz-tg-Uhg" secondAttribute="centerX" id="OzG-dj-45A"/>
+                            <constraint firstItem="4ll-Ok-Nz1" firstAttribute="top" secondItem="9lz-Tf-PGZ" secondAttribute="top" constant="15" id="Ssb-LK-xhl"/>
+                            <constraint firstItem="IsR-r5-T8I" firstAttribute="top" secondItem="RxT-y9-bAe" secondAttribute="bottom" constant="30.329999999999998" id="TpY-Ko-g3g"/>
+                            <constraint firstItem="mjB-te-o6l" firstAttribute="centerX" secondItem="7Nz-tg-Uhg" secondAttribute="centerX" id="fru-sW-dbb"/>
+                            <constraint firstItem="RxT-y9-bAe" firstAttribute="top" secondItem="fol-2i-ytR" secondAttribute="bottom" constant="64.329999999999998" id="rNN-AC-GNT"/>
+                            <constraint firstItem="mjB-te-o6l" firstAttribute="top" secondItem="RxT-y9-bAe" secondAttribute="bottom" constant="186" id="z0i-2a-ry6"/>
+                            <constraint firstItem="fol-2i-ytR" firstAttribute="centerX" secondItem="7Nz-tg-Uhg" secondAttribute="centerX" id="zva-CZ-mCh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zqP-An-lN9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sea-E6-2Hi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3677.0992366412211" y="-35.211267605633807"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eN0-SX-YyE">
+            <objects>
+                <viewController id="uTy-Cl-i2q" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AgL-bX-adq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地理大冒險" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmm-nA-5rD">
+                                <rect key="frame" x="46" y="130.33333333333334" width="301.33333333333331" height="71.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="臺灣地名複習" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0l-Vh-8I5">
+                                <rect key="frame" x="46" y="396" width="301.33333333333331" height="60"/>
+                                <color key="backgroundColor" red="0.99162036180496216" green="0.92332988977432251" blue="0.013433388434350491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omm-KA-1Fd">
+                                <rect key="frame" x="73" y="542" width="247" height="110"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="82"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="下一頁"/>
+                                <connections>
+                                    <segue destination="UBd-Kq-A7c" kind="show" id="L2x-ih-L3O"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="m_map" translatesAutoresizingMaskIntoConstraints="NO" id="elD-L6-Rlt">
+                                <rect key="frame" x="76.666666666666686" y="230" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Ek0-ZE-XNf"/>
+                                    <constraint firstAttribute="width" constant="240" id="rwq-uV-MMZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tap" translatesAutoresizingMaskIntoConstraints="NO" id="NAM-Je-bRO">
+                                <rect key="frame" x="142.66666666666666" y="686" width="108" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="F4h-bb-nFN"/>
+                                    <constraint firstAttribute="height" constant="69" id="U0q-N1-A1h"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xb5-Yn-aTB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mmm-nA-5rD" firstAttribute="centerX" secondItem="AgL-bX-adq" secondAttribute="centerX" id="0sm-SR-Gi5"/>
+                            <constraint firstItem="elD-L6-Rlt" firstAttribute="centerX" secondItem="AgL-bX-adq" secondAttribute="centerX" id="CEe-lO-uOD"/>
+                            <constraint firstItem="p0l-Vh-8I5" firstAttribute="top" secondItem="elD-L6-Rlt" secondAttribute="bottom" constant="38" id="IJP-UB-VUC"/>
+                            <constraint firstItem="omm-KA-1Fd" firstAttribute="top" secondItem="p0l-Vh-8I5" secondAttribute="bottom" constant="86" id="MWN-66-tNl"/>
+                            <constraint firstItem="omm-KA-1Fd" firstAttribute="centerX" secondItem="AgL-bX-adq" secondAttribute="centerX" id="Qw8-su-4Us"/>
+                            <constraint firstItem="NAM-Je-bRO" firstAttribute="centerX" secondItem="AgL-bX-adq" secondAttribute="centerX" id="VF7-ua-hiM"/>
+                            <constraint firstItem="p0l-Vh-8I5" firstAttribute="centerX" secondItem="AgL-bX-adq" secondAttribute="centerX" id="ZlG-Td-ic3"/>
+                            <constraint firstItem="p0l-Vh-8I5" firstAttribute="centerY" secondItem="AgL-bX-adq" secondAttribute="centerY" id="eoi-fA-roD"/>
+                            <constraint firstItem="NAM-Je-bRO" firstAttribute="top" secondItem="omm-KA-1Fd" secondAttribute="bottom" constant="34" id="nHy-aD-lzs"/>
+                            <constraint firstItem="elD-L6-Rlt" firstAttribute="top" secondItem="Mmm-nA-5rD" secondAttribute="bottom" constant="28" id="wbE-kY-pSp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9jh-Q5-YhC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EZI-Nd-r8H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2907.6335877862593" y="-34.507042253521128"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xrC-oe-ga3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rrf-Vd-9dN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SBV-r5-rcW">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uTy-Cl-i2q" kind="relationship" relationship="rootViewController" id="TuN-Cz-uBN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T0Y-Eb-qwi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980.916030534351" y="-34.507042253521128"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="m_map" width="479" height="888"/>
+        <image name="tap" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

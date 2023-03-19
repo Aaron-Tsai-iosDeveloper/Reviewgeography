@@ -13,10 +13,11 @@
 		456182C829C36B4600435A5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456182C629C36B4600435A5C /* Main.storyboard */; };
 		456182CA29C36B4900435A5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456182C929C36B4900435A5C /* Assets.xcassets */; };
 		456182CD29C36B4900435A5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456182CB29C36B4900435A5C /* LaunchScreen.storyboard */; };
+		4568238229C6D30900551022 /* crayon_1-1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4568238129C6D30900551022 /* crayon_1-1.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		456182BD29C36B4600435A5C /* 0316.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 0316.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		456182BD29C36B4600435A5C /* 地理大冒險.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "地理大冒險.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		456182C029C36B4600435A5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		456182C229C36B4600435A5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		456182C429C36B4600435A5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		456182C929C36B4900435A5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		456182CC29C36B4900435A5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		456182CE29C36B4900435A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4568238129C6D30900551022 /* crayon_1-1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crayon_1-1.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,7 @@
 		456182BE29C36B4600435A5C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				456182BD29C36B4600435A5C /* 0316.app */,
+				456182BD29C36B4600435A5C /* 地理大冒險.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +58,7 @@
 		456182BF29C36B4600435A5C /* 0316 */ = {
 			isa = PBXGroup;
 			children = (
+				4568238129C6D30900551022 /* crayon_1-1.ttf */,
 				456182C029C36B4600435A5C /* AppDelegate.swift */,
 				456182C229C36B4600435A5C /* SceneDelegate.swift */,
 				456182C429C36B4600435A5C /* ViewController.swift */,
@@ -70,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		456182BC29C36B4600435A5C /* 0316 */ = {
+		456182BC29C36B4600435A5C /* 地理大冒險 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 456182D129C36B4900435A5C /* Build configuration list for PBXNativeTarget "0316" */;
+			buildConfigurationList = 456182D129C36B4900435A5C /* Build configuration list for PBXNativeTarget "地理大冒險" */;
 			buildPhases = (
 				456182B929C36B4600435A5C /* Sources */,
 				456182BA29C36B4600435A5C /* Frameworks */,
@@ -82,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = 0316;
+			name = "地理大冒險";
 			productName = 0316;
-			productReference = 456182BD29C36B4600435A5C /* 0316.app */;
+			productReference = 456182BD29C36B4600435A5C /* 地理大冒險.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 456182B829C36B4600435A5C /* Build configuration list for PBXProject "0316" */;
+			buildConfigurationList = 456182B829C36B4600435A5C /* Build configuration list for PBXProject "地理大冒險" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				456182BC29C36B4600435A5C /* 0316 */,
+				456182BC29C36B4600435A5C /* 地理大冒險 */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4568238229C6D30900551022 /* crayon_1-1.ttf in Resources */,
 				456182CD29C36B4900435A5C /* LaunchScreen.storyboard in Resources */,
 				456182CA29C36B4900435A5C /* Assets.xcassets in Resources */,
 				456182C829C36B4600435A5C /* Main.storyboard in Resources */,
@@ -337,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		456182B829C36B4600435A5C /* Build configuration list for PBXProject "0316" */ = {
+		456182B829C36B4600435A5C /* Build configuration list for PBXProject "地理大冒險" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				456182CF29C36B4900435A5C /* Debug */,
@@ -346,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		456182D129C36B4900435A5C /* Build configuration list for PBXNativeTarget "0316" */ = {
+		456182D129C36B4900435A5C /* Build configuration list for PBXNativeTarget "地理大冒險" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				456182D229C36B4900435A5C /* Debug */,
