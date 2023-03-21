@@ -13,7 +13,6 @@
 		456182C829C36B4600435A5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456182C629C36B4600435A5C /* Main.storyboard */; };
 		456182CA29C36B4900435A5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456182C929C36B4900435A5C /* Assets.xcassets */; };
 		456182CD29C36B4900435A5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456182CB29C36B4900435A5C /* LaunchScreen.storyboard */; };
-		4568238229C6D30900551022 /* crayon_1-1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4568238129C6D30900551022 /* crayon_1-1.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		456182C929C36B4900435A5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		456182CC29C36B4900435A5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		456182CE29C36B4900435A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4568238129C6D30900551022 /* crayon_1-1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crayon_1-1.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +56,6 @@
 		456182BF29C36B4600435A5C /* 0316 */ = {
 			isa = PBXGroup;
 			children = (
-				4568238129C6D30900551022 /* crayon_1-1.ttf */,
 				456182C029C36B4600435A5C /* AppDelegate.swift */,
 				456182C229C36B4600435A5C /* SceneDelegate.swift */,
 				456182C429C36B4600435A5C /* ViewController.swift */,
@@ -128,7 +125,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4568238229C6D30900551022 /* crayon_1-1.ttf in Resources */,
 				456182CD29C36B4900435A5C /* LaunchScreen.storyboard in Resources */,
 				456182CA29C36B4900435A5C /* Assets.xcassets in Resources */,
 				456182C829C36B4600435A5C /* Main.storyboard in Resources */,
@@ -293,6 +289,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 0316/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = reviewgeography;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,6 +317,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 0316/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = reviewgeography;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
